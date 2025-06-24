@@ -1,0 +1,29 @@
+# Phishing Email Analysis Report
+
+📨 Sample 1: Fake Microsoft Account Alert
+
+1. Sender email: security@m1crosoft-support.com – domain name intentionally misspelled.
+2. Link: http://m1crosoft-verifyuser.com/login – does not belong to real Microsoft.
+3. Urgent language: "account will be permanently deleted".
+4. Generic greeting – no user name mentioned.
+5. No HTTPS in the link – insecure.
+
+📨 Sample 2: Fake Amazon Order Confirmation
+
+1. Sender email: orders-update@amaz0n-pay.com – Amazon spelled as "amaz0n".
+2. Link: http://amaz0n-helpcenter.com/refund – misleading domain.
+3. Threatening tone: "payment will be deducted".
+4. Creates panic to force the user to click quickly.
+5. Claims large amount purchase to scare user.
+
+📨 Sample 3: Fake HDFC Bank Alert
+
+1. Sender email: support@hdfc-securityalert.in – not an official HDFC domain.
+2. Link: http://hdfc-bankingverify.com/unblock – does not match official bank site.
+3. Urgent message: "NetBanking blocked due to suspicious activity".
+4. Encourages user to click on fake link.
+5. No user name, only "Dear User" used.
+
+✅ Conclusion:
+All three emails show common phishing signs – fake sender, urgent/tense tone, suspicious links, and grammatical issues. These are meant to scare the user into clicking and stealing credentials.
+
