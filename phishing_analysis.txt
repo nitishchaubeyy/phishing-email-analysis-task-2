@@ -27,3 +27,16 @@
 ✅ Conclusion:
 All three emails show common phishing signs – fake sender, urgent/tense tone, suspicious links, and grammatical issues. These are meant to scare the user into clicking and stealing credentials.
 
+🧾 Email Header Analysis
+
+1. **Return-Path** shows sender as `admin@paypal-fake.com` — clearly a spoofed domain meant to look like PayPal.
+2. **Received from** server is `suspicious.smtp12.ru` with IP `185.243.116.23` — origin from `.ru` domain is suspicious for PayPal.
+3. **Message-ID** is generic and from `example.org`, not matching PayPal’s domain.
+4. **From** address is `service@paypal-fake.com` — again a fake domain mimicking official PayPal email.
+5. **Reply-To** is a completely different email: `help@pay-pal-support.in` — redirection to an attacker-controlled inbox.
+6. **SPF: FAIL** — Sender domain not authorized to send mail on behalf of PayPal.
+7. **DKIM: none** and **DMARC: FAIL** — indicates email is not cryptographically verified and likely spoofed.
+
+✅ Conclusion:
+The header confirms that this is a **spoofed phishing email**. It uses a fake domain, insecure mail server, and fails SPF/DKIM/DMARC checks — all strong indicators of phishing.
+
